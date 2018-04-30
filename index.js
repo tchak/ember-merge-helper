@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-merge'
+  name: 'ember-merge-helper'
 };

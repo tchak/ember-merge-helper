@@ -1,20 +1,22 @@
-ember-merge
+ember-merge-helper
 ==============================================================================
 
-[Short description of the addon.]
+Ember template {{merge}} helper
 
 Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install ember-merge
+ember install ember-merge-helper
 ```
 
 
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+```hbs
+{{merge hashA hashB a=b c=d}}
+```
 
 
 Contributing
@@ -23,7 +25,7 @@ Contributing
 ### Installation
 
 * `git clone <repository-url>`
-* `cd ember-merge`
+* `cd ember-merge-helper`
 * `yarn install`
 
 ### Linting
