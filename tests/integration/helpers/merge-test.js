@@ -20,9 +20,10 @@ module('Integration | Helper | merge', function(hooks) {
 
   test('merge hashes', async function(assert) {
     this.set('hash', { c: "d" });
+    this.set('hash2', { e: "f" });
 
-    await render(hbs`{{#each-in (merge hash a="b") as |key value|}}{{key}}{{value}}{{/each-in}}`);
+    await render(hbs`{{#each-in (merge hash hash2 a="b") as |key value|}}{{key}}{{value}}{{/each-in}}`);
 
-    assert.equal(this.element.textContent.trim(), 'cdab');
+    assert.equal(this.element.textContent.trim(), 'cdefab');
   });
 });
